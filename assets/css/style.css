@@ -1,9 +1,81 @@
 :root {
-    
+    --cinza-claro: #f8f8f8;
+    --branco: #fff;
+    --titulo: #000;
+    --fonte: #767676;
+    --montserrat: 'Montserrat', sans-serif;
+    --mulish: 'Mulish', sans-serif;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--mulish);
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: var(--fonte);
 }
 
+.menu {
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--branco);
+}
 
+.content {
+    background-color: var(--cinza-claro);
+    max-width: 887px;
+    width: 100%;
+    margin-left: auto;
+    height: auto;
+    position: relative;
+    padding: 0 40px;
+}
+
+.content__home {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.content__img {
+    background-image: url(/assets/img/Avatar.png);
+    min-width: 400px;
+    min-height: 400px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.content__name {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--titulo);
+    font-family: var(--montserrat);
+}
+
+.content__text {
+    font-family: var(--montserrat);
+    font-style: italic;
+    font-weight: 500;
+    max-width: 450px;
+    margin-bottom: 30px;
+
+}
+
+.content__list {
+    display: flex;
+  }
+
+.fa-brands {
+    font-size: 22px;
+    color: var(--titulo);
+    margin-right: 15px;
+  }

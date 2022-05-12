@@ -6,40 +6,39 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/fonts/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/abdbbdd39d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2756983640.js" crossorigin="anonymous"></script>
     <title>Mel Carvalho</title>
 </head>
 <body>
-    <header>
+    <header class="menu">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Portfólio</li>
-                <li>Contato</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-address-card"></i>Sobre</li>
+                <li><i class="fa-solid fa-briefcase"></i>Portfólio</li>
+                <li><i class="fa-solid fa-envelope"></i>Contato</li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <div>
-                <img src="assets/img/Avatar.png" alt="Foto de acervo pessoal">
+    <main class="content">
+        <section class="content__home">
+            <div class="content__img">
             </div>
-            <div>
-                <h1>Mel Carvalho</h1>
-                <p>Olá, me chamo Mel! Sou estudante de TI e esse é o meu portfólio.</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <div class="content__presentation">
+                <h1 class="content__name">Mel Carvalho</h1>
+                <p class="content__text">Olá! Me chamo Mel, sou estudante de TI e esse é o meu portfólio.</p>
+                <ul class="content__list">
+                    <li class="content__item"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="content__item"><a href=""><i class="fa-brands fa-github"></i></a></li>
                 </ul>
             </div>
         </section>
-        <section>
-            <h2>Sobre</h2>
+        <section class="content__about">
+            <h2 class="content__title">Sobre</h2>
             <p>Me chamo Mel, sou estudante de Tecnologia da Informação, mais especificamente Sistemas para Internet e tenho interesse em me especializar na área de Desenvolvimento Web. Alguns dos pequenos projetos onde coloco em prática meus estudos podem ser conferidos no meu repositório do github.</p>
             <div>
                 <div>
@@ -101,7 +100,7 @@
             </figure>
         </section>
     </main>
-    <footer>
+    <footer class="contato">
         <h2>Contato</h2>
         <input type="text" placeholder="Nome completo">
         <input type="email" placeholder="Insira seu email">
