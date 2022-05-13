@@ -17,15 +17,15 @@
     <header class="menu">
         <nav>
             <ul>
-                <li><i class="fa-solid fa-house"></i>Home</li>
-                <li><i class="fa-solid fa-address-card"></i>Sobre</li>
-                <li><i class="fa-solid fa-briefcase"></i>Portfólio</li>
-                <li><i class="fa-solid fa-envelope"></i>Contato</li>
+                <li><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#about">Sobre</a></li>
+                <li><i class="fa-solid fa-briefcase"></i><a href="#portfolio">Portfólio</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main class="content">
-        <section class="content__home">
+        <section class="content__home" id="home">
             <div class="content__img">
             </div>
             <div class="content__presentation">
@@ -37,9 +37,9 @@
                 </ul>
             </div>
         </section>
-        <section class="content__about">
+        <section class="content__about" id="about">
             <h2 class="content__title">Sobre</h2>
-            <p>Me chamo Mel, sou estudante de Tecnologia da Informação, mais especificamente Sistemas para Internet e tenho interesse em me especializar na área de Desenvolvimento Web. Alguns dos pequenos projetos onde coloco em prática meus estudos podem ser conferidos no meu repositório do github.</p>
+            <p class="content__text">Me chamo Mel, sou estudante de Tecnologia da Informação, mais especificamente Sistemas para Internet e tenho interesse em me especializar na área de Desenvolvimento Web. Alguns dos pequenos projetos onde coloco em prática meus estudos podem ser conferidos no meu repositório do github.</p>
             <div>
                 <div>
                     <h3>Formação</h3>
@@ -84,28 +84,32 @@
             </div>
             <button>Baixar CV</button>
         </section>
-        <section>
-            <h2>Portfólio</h2>
-            <figure>
-                <img src="assets/img/01.png" alt="Imagem de site">
-            </figure>
-            <figure>
-                <img src="assets/img/02.png" alt="Imagem de site">
-            </figure>
-            <figure>
-                <img src="assets/img/05.png" alt="Imagem de site">
-            </figure>
-            <figure>
-                <img src="assets/img/04.png" alt="Imagem de site">
-            </figure>
+        <section class="content__portfolio">
+            <h2 class="content__title" id="portfolio">Portfólio</h2>
+            <div class="content__webs">
+                <figure class="content__web">
+                    <img src="assets/img/01.png" alt="Imagem de site">
+                </figure>
+                <figure class="content__web">
+                    <img src="assets/img/02.png" alt="Imagem de site">
+                </figure>
+                <figure class="content__web">
+                    <img src="assets/img/05.png" alt="Imagem de site">
+                </figure>
+                <figure class="content__web">
+                    <img src="assets/img/04.png" alt="Imagem de site">
+                </figure>
+            </div>
         </section>
     </main>
-    <footer class="contato">
-        <h2>Contato</h2>
-        <input type="text" placeholder="Nome completo">
-        <input type="email" placeholder="Insira seu email">
-        <input type="text" placeholder="Deixe sua mensagem aqui.">
-        <button>Enviar</button>
+    <footer class="contact" id="contact">
+        <h2 class="contact__title">Contato</h2>
+        <div class="contact__info">
+            <input class="contact__name" type="text" placeholder="Nome completo">
+            <input class="contact__email" type="email" placeholder="Insira seu email">
+            <input class="contact__msg" type="text" placeholder="Deixe sua mensagem aqui.">
+            <button class="contact__btn">Enviar</button>
+        </div>
     </footer>
 </body>
 </html>
