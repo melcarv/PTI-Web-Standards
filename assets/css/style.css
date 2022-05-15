@@ -127,6 +127,10 @@ body {
     margin-top: 50px;
 }
 
+.content__web {
+    margin-bottom: 30px;
+  }
+
 .contact__info {
     display: flex;
     flex-direction: column;
