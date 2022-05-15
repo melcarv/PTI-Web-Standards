@@ -15,14 +15,16 @@
 </head>
 <body>
     <header class="menu">
+        <h2 class="menu__title">Menu</h2>
         <nav>
             <ul>
-                <li><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
-                <li><i class="fa-solid fa-address-card"></i><a href="#about">Sobre</a></li>
-                <li><i class="fa-solid fa-briefcase"></i><a href="#portfolio">Portfólio</a></li>
-                <li><i class="fa-solid fa-envelope"></i><a href="#contact">Contato</a></li>
+                <li class="menu__item"><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
+                <li class="menu__item"><i class="fa-solid fa-address-card"></i><a href="#about">Sobre</a></li>
+                <li class="menu__item"><i class="fa-solid fa-briefcase"></i><a href="#portfolio">Portfólio</a></li>
+                <li class="menu__item"><i class="fa-solid fa-paper-plane"></i><a href="#contact">Contato</a></li>
             </ul>
         </nav>
+        <span class="menu__copyrt">© 2022 Criado por Mel.</span>
     </header>
     <main class="content">
         <section class="content__home" id="home">
@@ -105,10 +107,17 @@
     <footer class="contact" id="contact">
         <h2 class="contact__title">Contato</h2>
         <div class="contact__info">
-            <input class="contact__name" type="text" placeholder="Nome completo">
-            <input class="contact__email" type="email" placeholder="Insira seu email">
-            <input class="contact__msg" type="text" placeholder="Deixe sua mensagem aqui.">
-            <button class="contact__btn">Enviar</button>
+            <form class="contact__form">
+                <label for="user"></label>
+                <input class="contact__name" type="text" id="user" placeholder="Nome completo">
+                <label for="email"></label>
+                <input class="contact__email" type="email" id="email" placeholder="Insira seu email">
+                <label for="text"></label>
+                <textarea class="contact__msg" id="text" cols="30" rows="10" placeholder="Deixe sua mensagem aqui."></textarea>
+                <button class="contact__btn" type="submit">Enviar</button>
+            </form>
+            <span>OU</span>
+            <p>caso queira enviar um e-mail, é só clicar aqui <a href="mailto:melm.dev@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
         </div>
     </footer>
 </body>
