@@ -47,6 +47,7 @@ body {
 .menu__item {
     margin-bottom: 12px;
     letter-spacing: 1.2px;
+    transition: .2s;
 }
 
 .menu__item:hover {
@@ -127,8 +128,35 @@ body {
     margin-top: 50px;
 }
 
+.content__subtitle {
+    font-size: 18px;
+    font-family: var(--montserrat);
+    font-weight: 800;
+    color: var(--titulo);
+}
+
+.content__date {
+    background-color: rgba(0,0,0,.04);
+    color: #333;
+    padding: 4px 10px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+}
+
+.content__webs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 .content__web {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.content__page {
+    width: 95%;
   }
 
 .contact__info {
@@ -153,7 +181,7 @@ body {
     letter-spacing: 1.2px;
 }
 
-.contact__btn {
+.content__btn, .contact__btn {
     background-color: #000;
     color: #fff;
     padding: 10px 40px;
