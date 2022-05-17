@@ -84,7 +84,7 @@ body {
 }
 
 .content__img {
-    background-image: url(/assets/img/Avatar.png);
+    background-image: url(../img/Avatar.png);
     min-width: 400px;
     min-height: 400px;
     position: relative;
