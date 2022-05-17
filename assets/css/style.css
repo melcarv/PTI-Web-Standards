@@ -3,12 +3,13 @@
     --branco: #fff;
     --titulo: #000;
     --fonte: #767676;
+    --hover: #0a0a0a;
     --montserrat: 'Montserrat', sans-serif;
     --mulish: 'Mulish', sans-serif;
 }
 	
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +43,7 @@ body {
     color: var(--titulo);
     letter-spacing: 3px;
     margin-bottom: 50px;
-  }
+}
 
 .menu__item {
     margin-bottom: 12px;
@@ -57,7 +58,7 @@ body {
 
 .fa-house, .fa-address-card, .fa-briefcase, .fa-paper-plane {
     margin-right: 10px;
-  }
+}
 
 .menu__copyrt {
     margin-top: 30px;
@@ -133,6 +134,7 @@ body {
     font-family: var(--montserrat);
     font-weight: 800;
     color: var(--titulo);
+    margin-bottom: 30px;
 }
 
 .content__date {
@@ -148,7 +150,7 @@ body {
 .content__webs {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
 .content__web {
     margin-bottom: 10px;
@@ -157,7 +159,7 @@ body {
 
 .content__page {
     width: 95%;
-  }
+}
 
 .contact__info {
     display: flex;
@@ -165,6 +167,43 @@ body {
     align-items: flex-start;
     height: 500px;
 }
+
+.content__univ {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.content_cv {
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 1.5rem;
+    width: 92%;
+    margin-right: 20px;
+}
+
+.content__cv--others {
+    margin-bottom: 30px;
+}
+
+.content__cv--list {
+    border: none;
+    padding-top: 0;
+}
+
+.content__desc {
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--montserrat);
+    font-size: 14px;
+}
+
+.content__inst {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content__edu {
+    color: var(--titulo);
+  }
 
 .contact__form {
     display: contents;
@@ -182,11 +221,16 @@ body {
 }
 
 .content__btn, .contact__btn {
-    background-color: #000;
+    background-color: var(--titulo);
     color: #fff;
     padding: 10px 40px;
     margin-bottom: 10px;
     letter-spacing: 2px;
+}
+
+.contact__btn:hover, .content__btn:hover {
+    cursor: pointer;
+    background-color: var(--hover);
 }
 
 .fa-envelope {
